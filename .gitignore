@@ -1,0 +1,14 @@
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+
+# Build products and derived data
+Build/
+DerivedData/
+.build/
+
+# macOS metadata
+.DS_Store
+
+# Local design-source files are not required to build the app
+AppIconSource/

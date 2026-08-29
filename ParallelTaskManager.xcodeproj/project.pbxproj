@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEA0A51E3039CC0700A8017A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA0A51D3039CC0700A8017A /* WidgetKit.framework */; };
+		EEA0A5203039CC0700A8017A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA0A51F3039CC0700A8017A /* SwiftUI.framework */; };
+		EEA0A52D3039CC0800A8017A /* ParallelTaskManagerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EEA0A51B3039CC0700A8017A /* ParallelTaskManagerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EEA0A5643039CE2500A8017A /* ParallelTaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0A5653039CE2500A8017A /* ParallelTaskWidget.swift */; };
+		EEA0A5663039CE2500A8017A /* ParallelTaskWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0A5673039CE2500A8017A /* ParallelTaskWidgetBundle.swift */; };
+		EEA0A5683039CE2500A8017A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA0A5693039CE2500A8017A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEA0A4FB3039CBA700A8017A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEA0A4E33039CBA500A8017A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEA0A4EA3039CBA500A8017A;
+			remoteInfo = ParallelTaskManager;
+		};
+		EEA0A5053039CBA700A8017A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEA0A4E33039CBA500A8017A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEA0A4EA3039CBA500A8017A;
+			remoteInfo = ParallelTaskManager;
+		};
+		EEA0A52B3039CC0800A8017A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEA0A4E33039CBA500A8017A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEA0A51A3039CC0700A8017A;
+			remoteInfo = ParallelTaskManagerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEA0A5323039CC0800A8017A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EEA0A52D3039CC0800A8017A /* ParallelTaskManagerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EEA0A4EB3039CBA500A8017A /* ParallelTaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallelTaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA0A4FA3039CBA700A8017A /* ParallelTaskManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelTaskManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA0A5043039CBA700A8017A /* ParallelTaskManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelTaskManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA0A51B3039CC0700A8017A /* ParallelTaskManagerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ParallelTaskManagerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA0A51D3039CC0700A8017A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EEA0A51F3039CC0700A8017A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EEA0A5653039CE2500A8017A /* ParallelTaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelTaskWidget.swift; sourceTree = "<group>"; };
+		EEA0A5673039CE2500A8017A /* ParallelTaskWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelTaskWidgetBundle.swift; sourceTree = "<group>"; };
+		EEA0A5693039CE2500A8017A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA0A56A3039CE2500A8017A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EEA0A4ED3039CBA500A8017A /* ParallelTaskManager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParallelTaskManager;
+			sourceTree = "<group>";
+		};
+		EEA0A4FD3039CBA700A8017A /* ParallelTaskManagerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParallelTaskManagerTests;
+			sourceTree = "<group>";
+		};
+		EEA0A5073039CBA700A8017A /* ParallelTaskManagerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParallelTaskManagerUITests;
+			sourceTree = "<group>";
+		};
+		EEA0A5623039CE2500A8017A /* ParallelTaskManager/Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParallelTaskManager/Models;
+			sourceTree = "<group>";
+		};
+		EEA0A5633039CE2500A8017A /* ParallelTaskManager/Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParallelTaskManager/Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEA0A4E83039CBA500A8017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A4F73039CBA700A8017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5013039CBA700A8017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5183039CC0700A8017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA0A5203039CC0700A8017A /* SwiftUI.framework in Frameworks */,
+				EEA0A51E3039CC0700A8017A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEA0A4E23039CBA500A8017A = {
+			isa = PBXGroup;
+			children = (
+				EEA0A4ED3039CBA500A8017A /* ParallelTaskManager */,
+				EEA0A5623039CE2500A8017A /* ParallelTaskManager/Models */,
+				EEA0A5633039CE2500A8017A /* ParallelTaskManager/Shared */,
+				EEA0A4FD3039CBA700A8017A /* ParallelTaskManagerTests */,
+				EEA0A5073039CBA700A8017A /* ParallelTaskManagerUITests */,
+				EEA0A5213039CC0700A8017A /* ParallelTaskManagerWidget */,
+				EEA0A51C3039CC0700A8017A /* Frameworks */,
+				EEA0A4EC3039CBA500A8017A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEA0A4EC3039CBA500A8017A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0A4EB3039CBA500A8017A /* ParallelTaskManager.app */,
+				EEA0A4FA3039CBA700A8017A /* ParallelTaskManagerTests.xctest */,
+				EEA0A5043039CBA700A8017A /* ParallelTaskManagerUITests.xctest */,
+				EEA0A51B3039CC0700A8017A /* ParallelTaskManagerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEA0A51C3039CC0700A8017A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0A51D3039CC0700A8017A /* WidgetKit.framework */,
+				EEA0A51F3039CC0700A8017A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA0A5213039CC0700A8017A /* ParallelTaskManagerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0A5653039CE2500A8017A /* ParallelTaskWidget.swift */,
+				EEA0A5673039CE2500A8017A /* ParallelTaskWidgetBundle.swift */,
+				EEA0A5693039CE2500A8017A /* Assets.xcassets */,
+				EEA0A56A3039CE2500A8017A /* Info.plist */,
+			);
+			path = ParallelTaskManagerWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEA0A4EA3039CBA500A8017A /* ParallelTaskManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA0A50E3039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManager" */;
+			buildPhases = (
+				EEA0A4E73039CBA500A8017A /* Sources */,
+				EEA0A4E83039CBA500A8017A /* Frameworks */,
+				EEA0A4E93039CBA500A8017A /* Resources */,
+				EEA0A5323039CC0800A8017A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA0A52C3039CC0800A8017A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEA0A4ED3039CBA500A8017A /* ParallelTaskManager */,
+			);
+			name = ParallelTaskManager;
+			packageProductDependencies = (
+			);
+			productName = ParallelTaskManager;
+			productReference = EEA0A4EB3039CBA500A8017A /* ParallelTaskManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEA0A4F93039CBA700A8017A /* ParallelTaskManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA0A5113039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerTests" */;
+			buildPhases = (
+				EEA0A4F63039CBA700A8017A /* Sources */,
+				EEA0A4F73039CBA700A8017A /* Frameworks */,
+				EEA0A4F83039CBA700A8017A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA0A4FC3039CBA700A8017A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEA0A4FD3039CBA700A8017A /* ParallelTaskManagerTests */,
+			);
+			name = ParallelTaskManagerTests;
+			packageProductDependencies = (
+			);
+			productName = ParallelTaskManagerTests;
+			productReference = EEA0A4FA3039CBA700A8017A /* ParallelTaskManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEA0A5033039CBA700A8017A /* ParallelTaskManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA0A5143039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerUITests" */;
+			buildPhases = (
+				EEA0A5003039CBA700A8017A /* Sources */,
+				EEA0A5013039CBA700A8017A /* Frameworks */,
+				EEA0A5023039CBA700A8017A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA0A5063039CBA700A8017A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEA0A5073039CBA700A8017A /* ParallelTaskManagerUITests */,
+			);
+			name = ParallelTaskManagerUITests;
+			packageProductDependencies = (
+			);
+			productName = ParallelTaskManagerUITests;
+			productReference = EEA0A5043039CBA700A8017A /* ParallelTaskManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EEA0A51A3039CC0700A8017A /* ParallelTaskManagerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA0A52F3039CC0800A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerWidgetExtension" */;
+			buildPhases = (
+				EEA0A5173039CC0700A8017A /* Sources */,
+				EEA0A5183039CC0700A8017A /* Frameworks */,
+				EEA0A5193039CC0700A8017A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EEA0A5623039CE2500A8017A /* ParallelTaskManager/Models */,
+				EEA0A5633039CE2500A8017A /* ParallelTaskManager/Shared */,
+			);
+			name = ParallelTaskManagerWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ParallelTaskManagerWidgetExtension;
+			productReference = EEA0A51B3039CC0700A8017A /* ParallelTaskManagerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEA0A4E33039CBA500A8017A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					EEA0A4EA3039CBA500A8017A = {
+						CreatedOnToolsVersion = 26.0;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
+					};
+					EEA0A4F93039CBA700A8017A = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = EEA0A4EA3039CBA500A8017A;
+					};
+					EEA0A5033039CBA700A8017A = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = EEA0A4EA3039CBA500A8017A;
+					};
+					EEA0A51A3039CC0700A8017A = {
+						CreatedOnToolsVersion = 26.0;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EEA0A4E63039CBA500A8017A /* Build configuration list for PBXProject "ParallelTaskManager" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEA0A4E23039CBA500A8017A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EEA0A4EC3039CBA500A8017A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEA0A4EA3039CBA500A8017A /* ParallelTaskManager */,
+				EEA0A4F93039CBA700A8017A /* ParallelTaskManagerTests */,
+				EEA0A5033039CBA700A8017A /* ParallelTaskManagerUITests */,
+				EEA0A51A3039CC0700A8017A /* ParallelTaskManagerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEA0A4E93039CBA500A8017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A4F83039CBA700A8017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5023039CBA700A8017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5193039CC0700A8017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA0A5683039CE2500A8017A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEA0A4E73039CBA500A8017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A4F63039CBA700A8017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5003039CBA700A8017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA0A5173039CC0700A8017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA0A5643039CE2500A8017A /* ParallelTaskWidget.swift in Sources */,
+				EEA0A5663039CE2500A8017A /* ParallelTaskWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEA0A4FC3039CBA700A8017A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEA0A4EA3039CBA500A8017A /* ParallelTaskManager */;
+			targetProxy = EEA0A4FB3039CBA700A8017A /* PBXContainerItemProxy */;
+		};
+		EEA0A5063039CBA700A8017A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEA0A4EA3039CBA500A8017A /* ParallelTaskManager */;
+			targetProxy = EEA0A5053039CBA700A8017A /* PBXContainerItemProxy */;
+		};
+		EEA0A52C3039CC0800A8017A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEA0A51A3039CC0700A8017A /* ParallelTaskManagerWidgetExtension */;
+			targetProxy = EEA0A52B3039CC0800A8017A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEA0A50C3039CBA700A8017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEA0A50D3039CBA700A8017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EEA0A50F3039CBA700A8017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParallelTaskManager/ParallelTaskManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+					ENABLE_APP_SANDBOX = YES;
+					ENABLE_HARDENED_RUNTIME = YES;
+					ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					ParallelTaskWidget.swift,
+					ParallelTaskWidgetBundle.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Parallel Task Manager";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEA0A5103039CBA700A8017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParallelTaskManager/ParallelTaskManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+					ENABLE_APP_SANDBOX = YES;
+					ENABLE_HARDENED_RUNTIME = YES;
+					ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					ParallelTaskWidget.swift,
+					ParallelTaskWidgetBundle.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Parallel Task Manager";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EEA0A5123039CBA700A8017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelTaskManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParallelTaskManager";
+			};
+			name = Debug;
+		};
+		EEA0A5133039CBA700A8017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelTaskManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParallelTaskManager";
+			};
+			name = Release;
+		};
+		EEA0A5153039CBA700A8017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ParallelTaskManager;
+			};
+			name = Debug;
+		};
+		EEA0A5163039CBA700A8017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ParallelTaskManager;
+			};
+			name = Release;
+		};
+		EEA0A5303039CC0800A8017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ParallelTaskManagerWidget/ParallelTaskManagerWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+					ENABLE_APP_SANDBOX = YES;
+					ENABLE_HARDENED_RUNTIME = YES;
+					GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParallelTaskManagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Parallel Task Manager";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManager.ParallelTaskManagerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEA0A5313039CC0800A8017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ParallelTaskManagerWidget/ParallelTaskManagerWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+					ENABLE_APP_SANDBOX = YES;
+					ENABLE_HARDENED_RUNTIME = YES;
+					GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParallelTaskManagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Parallel Task Manager";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParallelTaskManager.ParallelTaskManagerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEA0A4E63039CBA500A8017A /* Build configuration list for PBXProject "ParallelTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA0A50C3039CBA700A8017A /* Debug */,
+				EEA0A50D3039CBA700A8017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA0A50E3039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA0A50F3039CBA700A8017A /* Debug */,
+				EEA0A5103039CBA700A8017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA0A5113039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA0A5123039CBA700A8017A /* Debug */,
+				EEA0A5133039CBA700A8017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA0A5143039CBA700A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA0A5153039CBA700A8017A /* Debug */,
+				EEA0A5163039CBA700A8017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA0A52F3039CC0800A8017A /* Build configuration list for PBXNativeTarget "ParallelTaskManagerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA0A5303039CC0800A8017A /* Debug */,
+				EEA0A5313039CC0800A8017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEA0A4E33039CBA500A8017A /* Project object */;
+}
