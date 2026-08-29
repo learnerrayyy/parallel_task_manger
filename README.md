@@ -13,6 +13,15 @@ When multiple projects and deadlines start competing for your attention, Paralle
 - **Customizable appearance** — choose project colors and change the app background with built-in palettes or a custom background image.
 - **Local-first** — task data is stored locally on your Mac using SwiftData.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/timeline.jpg" alt="Timeline view showing deadlines across projects" width="49%" />
+  <img src="docs/screenshots/projects.jpg" alt="Projects view showing tasks, subtasks, and the current task" width="49%" />
+</p>
+
+<p align="center"><em>Timeline and Projects views</em></p>
+
 ## Requirements
 
 - macOS 26.0 or later
